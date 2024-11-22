@@ -1,0 +1,42 @@
+:root {
+  --color-light: lightgray;
+  --color-dark: darkgray;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.circle {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: black;
+  border-radius: 50%;
+  animation: pulse 1.5s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: .5;
+    transform: scale(1);
+  }
+
+  50%{
+    opacity: 0.3;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
